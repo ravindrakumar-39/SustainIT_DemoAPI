@@ -1,15 +1,11 @@
 package com.cargill.api.sustainit.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class SustainITProducts
 {
     private List<SustainITProduct> productList;
@@ -21,4 +17,15 @@ public class SustainITProducts
         return productList;
     }
 
+
+    public void setProductList(List<SustainITProduct> productList) {
+        this.productList = productList;
+    }
+
+    @Override
+    public String toString() {
+        return "SustainITProducts{" +
+                "productList=" + productList +
+                '}';
+    }
 }
